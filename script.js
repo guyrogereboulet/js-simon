@@ -19,27 +19,20 @@ console.log(arrayCasuale);
 
 // Timer di 30 secondi
 
-setTimeout(timer, 30000); //stampa dopo 30 secondi
+setTimeout(timer, 3000); //stampa dopo 30 secondi
 
 
 function timer() {
 
   // Con un ciclo chiedo all'utente di inserire i numeri che ha precedentemente visto
-
   for (var j = 1; j <= 5; j++) {
     var numeriUtente = parseInt(prompt("Inserisci il Numero che hai visto precedentemente ?"));
-    arrayUtente.push(numeriUtente);
+     if (arrayCasuale.includes(numeriUtente)) {
+       arrayIndovinati.push(numeriUtente);
+    }
   }
-  console.log(arrayUtente);
-
-
-  if (arrayCasuale.length[i] == arrayUtente.length[j]) {
-    console.log("Trovato");
-  }
-  else {
-    console.log("Non hai vinto");
-  }
-
+  console.log(arrayIndovinati);
+  console.log("Il numero di elementi indovinati è di " + arrayIndovinati.length);
 }
 
 
