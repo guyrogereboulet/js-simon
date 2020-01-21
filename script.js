@@ -33,13 +33,13 @@ function timer() {
   console.log(arrayUtente);
 
 
-  // if (arrayCasuale[i] == arrayUtente[j]) {
-  //   console.log("Hai vinto");
-  // }
-  // else {
-  //   console.log("Non hai vinto");
-  // }
-  //
+  if (arrayCasuale.length[i] == arrayUtente.length[j]) {
+    console.log("Trovato");
+  }
+  else {
+    console.log("Non hai vinto");
+  }
+
 }
 
 
